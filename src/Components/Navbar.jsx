@@ -6,9 +6,9 @@ function Navbar() {
   return (
     <>
     <nav>
-       <a href='app.js' className='logo'>
+       <Link to='app.js' className='logo'>
        <img src={logo} alt='logo'/>
-       </a>
+       </Link>
        <input className='menu-btn' type='checkbox' id='menu-btn'/>
        <h2 className='new'>D&F'S</h2><br/><h4 className='old'>Gomnvrf</h4>
 

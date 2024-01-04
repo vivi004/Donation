@@ -7,7 +7,7 @@ import Fundraisers from './Fundraisers';
 import Contact from './Contact';
 import About from './About';
 import '../Css/Style.css';
-
+import { Link } from 'react-router-dom';
 function Header() {
   return (
     <>
@@ -18,7 +18,7 @@ function Header() {
     <h1><span>HELP </span>and<span> SAVE</span></h1>
     <p className='details'>"We make a life by what we give.” “We can't help everyone, but… Everyone can help someone.” </p>
     <br/>
-    <a href='app.js' className='header-btn'>Donate</a>
+    <Link to='/' className='header-btn'>Donate</Link>
     </div>
     <div>
     </div>

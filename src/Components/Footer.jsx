@@ -1,24 +1,25 @@
 import React from 'react';
 import '../Css/Footer.css';
 
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer>
       <div>
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
       <div>
         <h4>Social Media</h4>
         <ul>
-          <li><a href="https://twitter.com">Twitter</a></li>
-          <li><a href="https://facebook.com">Facebook</a></li>
-          <li><a href="https://instagram.com">Instagram</a></li>
+          <li><Link to="https://twitter.com">Twitter</Link></li>
+          <li><Link to="https://facebook.com">Facebook</Link></li>
+          <li><Link to="https://instagram.com">Instagram</Link></li>
         </ul>
       </div>
       <div>

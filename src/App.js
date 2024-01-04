@@ -7,7 +7,7 @@ import Helps from "./Components/Helps";
 import Contact from "./Components/Contact"; 
 import Login from "./Components/Login";
 import Reg from "./Components/Register";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 

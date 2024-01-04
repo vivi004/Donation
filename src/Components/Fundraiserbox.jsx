@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Css/Style.css';
 
+import { Link } from 'react-router-dom';
 function Fundraiserbox(props) {
   return (
     <div className='a-box'>
@@ -9,7 +10,7 @@ function Fundraiserbox(props) {
     </div>
     <div className='a-b-text'>
     <h3>{props.name}</h3>
-    <a href='#' className='agent-btn'>Learn More</a>
+    <Link to='#' className='agent-btn'>Learn More</Link>
     </div>
     </div>
   )
