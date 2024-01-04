@@ -17,6 +17,7 @@ function App(){
 
  <BrowserRouter>
     <Routes>
+
     <Route index element={<Header/>}/>
     <Route path="/contact" element={<Contact/>} />
     <Route path="/how" element={<Howitworks/>} />
