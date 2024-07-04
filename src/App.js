@@ -10,7 +10,6 @@ import Reg from "./Components/Register";
 // import Footer from "./Components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
 function App(){
   return(
 <div className="App">
