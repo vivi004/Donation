@@ -1,0 +1,97 @@
+.how-it-works {
+    padding: 100px 0;
+    background: #0f172a;
+    position: relative;
+    overflow: hidden;
+}
+
+.hiw-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.hiw-header h2 {
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hiw-header p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hiw-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    position: relative;
+}
+
+.hiw-step {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 50px 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.hiw-step.active {
+    background: rgba(35, 108, 126, 0.1);
+    border-color: rgba(35, 108, 126, 0.3);
+    transform: translateY(-10px);
+}
+
+.hiw-step:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--primary-light, #04afda);
+    transform: translateY(-10px);
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    right: 40px;
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.05);
+    line-height: 1;
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary, #236c7e);
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    margin: 0 auto 30px;
+    box-shadow: 0 10px 20px rgba(35, 108, 126, 0.3);
+}
+
+.hiw-step h4 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hiw-step p {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+@media(max-width: 768px) {
+    .hiw-header h2 {
+        font-size: 2.8rem;
+    }
+}

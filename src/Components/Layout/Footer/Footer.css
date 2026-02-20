@@ -1,0 +1,70 @@
+footer {
+  padding: 80px 10%;
+  background: var(--bg-dark);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+footer h4 {
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+  color: var(--primary-light);
+}
+
+footer ul li {
+  margin-bottom: 12px;
+}
+
+footer ul li a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer ul li a:hover {
+  color: white;
+  padding-left: 5px;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+    padding: 60px 5%;
+  }
+}
+
+div {
+  text-align: left;
+}
+
+h4 {
+  color: #61dafb;
+  /* React blue, you can change this color */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}

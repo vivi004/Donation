@@ -1,0 +1,139 @@
+.agent {
+    padding: 100px 5%;
+    background: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.a-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.a-heading h1 {
+    font-size: 3.5rem;
+    color: var(--primary-dark, #0f172a);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.a-heading p {
+    color: #64748b;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.b-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.a-box {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s ease;
+    border: 1px solid #f1f5f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.a-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+}
+
+.a-b-img {
+    height: 280px;
+    overflow: hidden;
+}
+
+.a-b-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.a-box:hover .a-b-img img {
+    transform: scale(1.1);
+}
+
+.a-b-text {
+    padding: 30px;
+}
+
+.a-b-text h3 {
+    font-size: 1.4rem;
+    color: #1e293b;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.fund-progress {
+    margin-bottom: 30px;
+}
+
+.progress-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.raised {
+    color: var(--primary, #236c7e);
+}
+
+.percent {
+    color: var(--primary-light, #04afda);
+}
+
+.progress-bar {
+    height: 10px;
+    background: #f1f5f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary, #236c7e), var(--primary-light, #04afda));
+    border-radius: 5px;
+}
+
+.goal {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.agent-btn {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    background: var(--primary, #236c7e);
+    color: white;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.agent-btn:hover {
+    background: var(--primary-light, #04afda);
+    box-shadow: 0 10px 20px rgba(4, 175, 218, 0.2);
+}
+
+@media(max-width: 768px) {
+    .a-heading h1 {
+        font-size: 2.8rem;
+    }
+}

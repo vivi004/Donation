@@ -1,0 +1,136 @@
+.product {
+    padding: 100px 5%;
+    background: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.p-heading h3 {
+    font-size: 3.5rem;
+    color: var(--primary-dark, #0f172a);
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.p-heading p {
+    color: var(--text-muted, #64748b);
+    font-size: 1.2rem;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.p-box {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+}
+
+.p-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 260px;
+}
+
+.p-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.p-box:hover img {
+    transform: scale(1.1);
+}
+
+.p-box:hover img {
+    transform: scale(1.1);
+}
+
+.p-content {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.p-content h4 {
+    font-size: 1.5rem;
+    color: #1e293b;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.p-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.donors-count {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.donors-count ion-icon {
+    font-size: 1.2rem;
+    color: #0ea5e9;
+}
+
+.price-btn {
+    background: rgba(14, 165, 233, 0.1);
+    color: #0ea5e9;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.price-btn:hover {
+    background: #0ea5e9;
+    color: white;
+}
+
+@media(max-width: 768px) {
+    .p-heading h3 {
+        font-size: 2.5rem;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+}
